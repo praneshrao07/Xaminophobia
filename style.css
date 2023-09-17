@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("img/drawing.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 2000px;
+}
+/* -------------------navbar------------------- */
+nav {
+  margin: 5px 40px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: rgb(255, 149, 87);
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+ul {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+li a {
+  transition: 500ms;
+  color: rgb(255, 255, 255);
+}
+li a:hover,
+li a:focus {
+  color: rgb(0, 0, 0);
+  transition: 200ms;
+}
+/* -------------------socials--------------------- */
+.link {
+  padding: 20px 8px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 40%;
+}
+.link a {
+  transition: 400ms;
+}
+.link a:hover {
+  transform: scale(1.6);
+  transition: 200ms;
+}
+/* ---------------right side half------------------ */
+/* .wrapper {
+  position: absolute;
+  left: 50%;
+  width: 50vw;
+  height: 90vh;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+} */
+/* .box-1,
+.box-2,
+.box-3,
+.box-4 {
+  margin: 10px;
+  width: 120px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(255, 186, 95, 0.39);
+} */
