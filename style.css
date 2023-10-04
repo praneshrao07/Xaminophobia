@@ -63,50 +63,71 @@ li a:focus {
   transform: scale(1.6);
   transition: 200ms;
 }
+.divider {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+.right-half,
+.left-half {
+  border: 2px dotted brown;
+}
 /* ----------------------left-half------------------- */
 .heading-wrapper {
-  width: 50svh;
+  border: 2px solid blueviolet;
   padding: 20px;
+  width: 50vw;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
   font-size: 40px;
 }
-h2 {
+h2,
+p {
   margin: 1rem 2rem;
-  & a {
-    color: tomato;
-  }
+}
+h2 a {
+  color: tomato;
 }
 p {
   color: grey;
 }
 /* ---------------------right-half-------------------- */
 .grid-container {
-  position: absolute;
-  right: 0;
+  padding: 10px;
+  border: 2px solid gray;
   display: grid;
+  width: 50vw;
+  height: 60vh;
   grid-template-areas:
     "one one one"
     "two three three"
     "two four four";
-  gap: 10px;
-  align-items: center;
+  gap: 20px;
   z-index: 99;
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .grid:nth-child(1) {
   grid-area: one;
-  width: 100px;
 }
 .grid:nth-child(2) {
   grid-area: two;
-  width: 100px;
 }
 .grid:nth-child(3) {
   grid-area: three;
-  width: 100px;
 }
 .grid:nth-child(4) {
   grid-area: four;
-  width: 100px;
 }
